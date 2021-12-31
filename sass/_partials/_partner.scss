@@ -1,0 +1,32 @@
+.partners {
+    .partners-inner {
+        .title {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        .partner-grid{
+            display: grid!important;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            gap: 40px;
+            @include mq-medium{
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+            @include mq-small {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            @include mq-x-small {
+                grid-template-columns: 1fr 1fr;
+            }
+            .partner-item{
+                .partner-logo-container{
+                    .partner-logo {
+                        width: 120px;
+                    }
+                }
+            }
+            a.partner-item {
+                justify-self: center;
+            }
+        }
+    }
+}

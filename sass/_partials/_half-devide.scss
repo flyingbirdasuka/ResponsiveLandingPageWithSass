@@ -1,0 +1,153 @@
+.half-devide {
+    // margin-top: 0;
+    .half-devide-inner {
+        .half-devide-item {
+            .half-devide-item-inner {
+                height: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                @include mq-small {
+                    display: flex;
+                    flex-direction: column;
+                    &#reverse {
+                        flex-direction: column-reverse;
+                    }
+                }
+                .image-half {
+                    // width: 40vw;
+                    height: 100%;
+                    overflow: hidden;
+                    justify-self: center;
+                    @include mq-small {
+                        width: 60vw;
+                        align-self: center;
+                        margin: 10px 0px;
+                    }
+                }
+                .half-devide-item-content {
+                    margin: 0px 40px;
+                    display: grid;
+                    .upper {
+                        align-self: center;
+                        .title{
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+            .page-bottom {
+                background-color: $black;
+                color: $white;
+                width: 100%;
+                height: 40px;
+                display: grid;
+                .page-bottom-item{
+                    align-self: center;
+                }
+            }
+            .non-half-devided-item-inner{
+                height: 100%;
+                display: grid;
+                grid-template-columns: 3fr 2fr;
+                @include mq-small {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    img {
+                        width: 60%;
+                        align-self: center;
+                    }
+                }
+                .non-half-devide-item-content{
+                    margin: 0px 40px;
+                    align-self: center;
+                    .upper {
+                        margin: 0px 20px;
+                        .title{
+                            margin-bottom: 10px;
+                        }
+                    }
+                
+                    .btn-grid{
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin: 20px 0px;
+                        .gray{
+                            margin: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.half-devide-grid {
+    background-color: $grey-bg;
+    .half-devide-grid-inner {
+        .half-devide-grid-item {
+            .half-devide-grid-item-inner {
+                height: 100%;
+                display: grid;
+                // grid-template-rows: 1fr 1fr 1fr;
+                @include mq-small {
+                    padding: 40px 0px!important;
+                    // grid-template-rows: none!important;
+                }
+                .row{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    // height: auto;
+                    align-content: center;
+                    @include mq-small {
+                        display: flex;
+                        flex-direction: column;
+
+                        // height: auto;
+                        &#reverse {
+                            flex-direction: column-reverse;
+                        }
+                    }
+                    iframe {
+                        justify-self: center;
+                        align-self: center;
+                        width: 560px;
+                        height: 315px;
+                        margin: 10px 0px;
+                        @include mq-large {
+                            width: 400px;
+                            height: 260px;
+                        }
+                        @include mq-medium {
+                            width: 300px;
+                            height: 200px;
+                        }
+                        @include mq-small {
+                            width: 250px;
+                            height: 200px;
+                        }
+                    }    
+                    .image-half {
+                        width: 40vw;
+                        height: 50vh;
+                        overflow: hidden;
+                        justify-self: center;
+                        align-self: center;
+                        @include mq-small {
+                            width: 70vw;
+                        } 
+                    }
+                    .half-devide-grid-item-content {
+                        margin: 0px 40px;
+                        align-self: center;
+                        .title{
+                            margin: 10px 0px;
+                        }
+                      
+                    }
+                }
+               
+            }
+           
+        }
+    }
+}

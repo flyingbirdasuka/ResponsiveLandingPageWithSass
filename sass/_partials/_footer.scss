@@ -1,0 +1,189 @@
+.site-footer {
+    background-color: $grey-bg;
+    .footer-inner {
+        padding: 96px 96px 0px 96px;
+        @include mq-x-small {
+            padding: 30px 30px 0px 30px;
+        }
+        .footer-upper {
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+            @include mq-large {
+                gap: 0px;
+            }
+            @include mq-medium {
+                flex-direction: column;
+                gap: 30px;
+            }
+            .container {
+                display: flex;
+                gap: 30px;
+                margin-bottom: 10px;
+                @include mq-x-small {
+                    flex-direction: column;
+                }
+                .footer-nav {
+                    width: 150px;
+                    
+                    li{
+                        margin-bottom: 8px;
+                        display: block;
+                        a {
+                            font-size: 18px;
+                            font-weight: 600;
+                        }
+                        &:hover {
+                                opacity: .5;  
+                        }
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+                .footer-contact {
+                    margin-right: 80px;
+                    width: 205px;
+                    p {
+                        margin-top: 8px;
+                        font-size: 18px;
+                    }
+                    .title {
+                        font-weight: 600;
+                        color: $black;
+                        font-size: 18px;
+                    }
+                }
+                
+            }
+            .footer-social-nav {
+                padding-right: 18px;
+                .title-social{
+                    font-weight: 600;
+                    padding-bottom: 10px;
+                    color: $black;
+                    font-size: 18px;
+                }
+
+                nav{
+                    .menu-social-menu-container{
+                        width: 210px;
+                        .menu{
+                            display: flex;
+                            flex-wrap: wrap;
+                            li {
+                                margin-right: 70px;
+                                margin-top: 30px;
+                                list-style: none;
+                                width: 0px;
+                                a {
+                                    position: relative;
+                                    font-size: 0;
+                                
+                                    &::before {
+                                        content: '';
+                                        position: absolute;
+                                        background-position: 50%;
+                                        background-repeat: no-repeat;
+                                        background-size: contain;
+                                        width: 37px;
+                                        height: 50px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .footer-form {
+                .yikes-mailchimp-form-title {
+                    font-size: 24px !important;
+                    line-height: 1.65 !important;
+                    margin-bottom: 8px !important;
+                    @include mq-x-large {
+                        font-size: 18px !important;
+                        margin-bottom: 0px !important;
+                    }
+                  }
+                .yikes-mailchimp-form-description {
+                    color: #3E3E4E !important;
+                  }  
+                form.yikes-easy-mc-form {
+                    display: flex !important;
+                    margin-top: 32px !important;
+                    flex-direction: row;
+                    @include mq-x-large {
+                        flex-wrap: wrap;
+                    }
+                    @include mq-medium {
+                        flex-wrap: nowrap;
+                    }
+                    @include mq-x-small {
+                        flex-wrap: wrap;
+                    }
+                    
+                  }
+                form.yikes-easy-mc-form button[type=submit] {
+                    margin-left: 16px !important;
+                    margin-bottom: 16px;
+                    width: auto !important;
+                    border: solid 2px #2A2CA8 !important;
+                    color: #2A2CA8 !important;
+                    margin-top: 0 !important;
+                    font-size: 18px !important;
+                    font-weight: 600 !important;
+                    padding: 0px 34px !important;
+                    &:hover {
+                        background-color: rgba(42, 44, 168, 0.15);
+                    }
+                    @include mq-x-large {
+                        margin-left: 0px !important;
+                    }
+                    @include mq-medium {
+                        margin-left: 16px !important;
+                    }
+                    @include mq-x-small {
+                        margin-left: 0px !important;
+                    }
+                  }   
+                form.yikes-easy-mc-form input[type=email], form.yikes-easy-mc-form input[type=text] {
+                    background-color: #FFFFFF !important;
+                    padding: 18px !important;
+                    border-radius: 1px !important;
+                    border: solid 1px #C4C4C4 !important;
+                    font-family: "Epilogue", sans-serif !important;
+                    color: #0E0E12 !important;
+                    width: 100% !important;
+                    height: 72% !important;
+                    font-size: 18px !important;
+                    margin-bottom: 0 !important;
+                    @include mq-x-large {
+                        font-size: 12px !important;
+                    }
+                  }  
+                 form.yikes-easy-mc-form input[type=email]:focus, form.yikes-easy-mc-form input[type=text]:focus {
+                    outline: none !important;
+                    border: solid 1px #2A2CA8 !important;
+                    box-shadow: 0 0 0px 1px #2A2CA8 !important;
+                  }   
+                  form.yikes-easy-mc-form button[type=submit] span {
+                    white-space: nowrap !important;
+                  }
+                  form.yikes-easy-mc-form label {
+                    margin-bottom: 0 !important;
+                  }   
+            }
+        }
+        .footer-lower {
+            margin-top: 50px;
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .copyright {
+                margin-bottom: 32px;
+            }
+        }
+    }
+}
+
