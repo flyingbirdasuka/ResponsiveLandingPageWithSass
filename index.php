@@ -1,20 +1,17 @@
 <!doctype html>
 <html>
-<head>
-	
+<head>	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<link rel="preconnect" href="https://fonts.gstatic.com"> 
 	<link href="https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
-    <link href="/css/main.css" rel="stylesheet">
-    <link href="/css/radiobutton.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	
+	<link href="/css/main.css" rel="stylesheet">
+	<link href="/css/radiobutton.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <div id="page" class="site">
-
         <header id="masthead" class="site-header">
             <div class="header-inner">
                 <div class="nav-search">
@@ -79,10 +76,6 @@
                                                 <input type="radio" class="hide" name="fa-check-circle-o1" value="3">
                                                 <i class="fa fa-fw fa-check-circle-o "></i>&nbsp;I want to share my expertise with others
                                             </label>    
-                                            <!-- <label class="btn-filled btn-icon page-bottom">
-                                                <input type="radio" class="hide" name="fa-check-circle-o1" value="3">
-                                                <i class="fa fa-fw fa-check-circle-o "></i>&nbsp;See membership options for individuals
-                                            </label>                       -->
                                         </div>    
                                     </div>
                                     <image class="image-bg image-half" src="/img/top.png">      
